@@ -90,6 +90,7 @@ form input::placeholder {
     color: var(--tt-placeholder);
 }
 
+/* leia sempre ao contrario <<< */
 .input-wrapper + .input-wrapper {
     margin-top: 1.6rem;
 }
@@ -187,6 +188,6 @@ form button:hover {
 
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-30px) ;
+    transform: translateY(-30px);
     transition: transform .5s;
 }
