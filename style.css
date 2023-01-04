@@ -94,7 +94,7 @@ form input::placeholder {
     margin-top: 1.6rem;
 }
 
-button {
+form button {
     margin-top: 3.2rem;
     padding: 1.6rem;
     width: 100%;
@@ -116,6 +116,53 @@ button {
     transition: background .3s;
 }
 
-button:hover {
+form button:hover {
     background: var(--bg-button-hover);
+}
+
+/* modal/pop-up */
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-wrapper {
+    position: absolute;
+    /* top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+    inset: 0;
+    /* o inset 0 é mesma coisa que colocar todas propriedades acima */
+    background: rgba(0, 0, 0, 0.7);
+
+    /* como deixar elemento no centro quando é só 1 */
+    display: grid;
+    place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* estrategia do icone relativo ao elemento absoluto */
+.modal {
+    position: relative;
+}
+
+.modal button {
+    background: none;
+    border: none;
+
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    
+    cursor: pointer;
+
+    transition: transform .3s;
+}
+
+.modal button:hover {
+    transform: scale(1.1);
 }
