@@ -15,10 +15,11 @@ Modal.buttonClose.onclick = () => {
     Modal.close()
 }
 
-     window.addEventListener('keydown', handleKeydown)
+// capturando evendo do teclado esc
+window.addEventListener('keydown', handleKeydown)
 
-     function handleKeydown(event) {
-         if(event.key === 'Escape') {
+    function handleKeydown(event) {
+        if(event.key === 'Escape') {
             Modal.close()
-         }
-     }
+        }
+    }
